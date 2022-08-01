@@ -1,0 +1,15 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialogs_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: circle;
+}
+.list_item a {
+  cursor: pointer;
+  color: rgb(32, 111, 87);
+  text-decoration: none;
+}

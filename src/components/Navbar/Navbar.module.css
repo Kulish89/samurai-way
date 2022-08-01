@@ -1,0 +1,17 @@
+.nav {
+  grid-area: n;
+  background-color: rgb(17, 197, 167);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nav_link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.active_link {
+  color: rgb(32, 111, 87);
+  text-decoration: underline;
+}
