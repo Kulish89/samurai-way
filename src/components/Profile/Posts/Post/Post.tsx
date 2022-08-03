@@ -1,10 +1,13 @@
 import style from "../Posts.module.css";
 import userAva from "../../../../assets/images/user.png";
-const Post = () => {
+type PostPropsType = {
+  text: string;
+};
+const Post = (props: PostPropsType) => {
   return (
     <div className={style.postContainer}>
       <img src={userAva} className={style.post_avatar}></img>
-      <div className={style.post_text}>Hello World!</div>
+      <div className={style.post_text}>{props.text}</div>
     </div>
   );
 };

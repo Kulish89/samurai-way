@@ -2,14 +2,16 @@ import React from "react";
 import style from "./Profile.module.css";
 import background from "../../assets/images/social-network-background.jpg";
 import Posts from "./Posts/Posts";
-const Profile = () => {
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+type ProfilePropsType = {
+  postsData: Array<any>;
+};
+const Profile = ({ postsData }: ProfilePropsType) => {
   return (
     <div className={style.content}>
-      <div className={style.content_background}>
-        <img src={background}></img>
-      </div>
-      <div>Ava+description</div>
-      <Posts />
+      <ProfileInfo />
+
+      <Posts postsData={postsData} />
     </div>
   );
 };

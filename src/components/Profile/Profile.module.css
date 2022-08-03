@@ -7,3 +7,6 @@
   width: 100%;
   object-fit: cover;
 }
+.content_description {
+  padding: 10px;
+}

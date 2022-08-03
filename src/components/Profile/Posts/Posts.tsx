@@ -1,6 +1,9 @@
 import Post from "./Post/Post";
 import style from "./Posts.module.css";
-const Posts = () => {
+type PostsPropsType = {
+  postsData: Array<any>;
+};
+const Posts = ({ postsData }: PostsPropsType) => {
   return (
     <div className={style.posts}>
       <h2 className={style.posts_title}>My posts</h2>
@@ -9,10 +12,9 @@ const Posts = () => {
         <button className={style.posts_button}>Add post</button>
       </div>
       <div>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        {postsData.map((post) => {
+          return <Post key={post.id} text={post.text} />;
+        })}
       </div>
     </div>
   );

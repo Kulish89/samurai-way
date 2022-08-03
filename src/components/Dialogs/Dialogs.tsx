@@ -1,40 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import style from "./Dialogs.module.css";
+import DialogItem from "./DialogItem";
+import Message from "./Message";
 
-type DialogItemType = {
-  name: string;
-  id: number;
+type DialogsPropsType = {
+  dialogsData: Array<any>;
+  messagesData: Array<any>;
 };
-function DialogItem(props: DialogItemType) {
-  return (
-    <li className={style.list_item}>
-      <NavLink to={"/dialogs/" + props.id}>{props.name}</NavLink>
-    </li>
-  );
-}
-function Dialogs() {
+
+function Dialogs({ dialogsData, messagesData }: DialogsPropsType) {
   return (
     <div className={style.dialogs}>
       <div>
         <ul className={style.dialogs_list}>
-          <DialogItem name="Andrey" id={1} />
-          <DialogItem name="Alex" id={2} />
-          <DialogItem name="Elena" id={3} />
-          <DialogItem name="Olga" id={4} />
-          <DialogItem name="Dimych" id={5} />
+          {dialogsData.map((el) => {
+            return <DialogItem key={el.id} name={el.name} id={el.id} />;
+          })}
         </ul>
       </div>
       <div className={style.dialogs_messages}>
-        <div>
-          <p>Hey! Hello! How are you?</p>
-        </div>
-        <div>
-          <p>Why do you keep silent?</p>
-        </div>
-        <div>
-          <p>Don't ignore me!</p>
-        </div>
+        {messagesData.map((el) => {
+          return <Message key={el.id} message={el.message} />;
+        })}
       </div>
     </div>
   );
