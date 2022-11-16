@@ -2,7 +2,18 @@
   grid-area: h;
   background-color: rgb(17, 197, 167);
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .header img {
+  height: 100%;
+  border-radius: 50%;
+}
+.login_userData {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+.login_userData img {
   height: 100%;
 }
