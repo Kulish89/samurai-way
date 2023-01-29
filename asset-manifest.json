@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/samurai-way/static/css/main.18214cf9.css",
+    "main.js": "/samurai-way/static/js/main.35df16c7.js",
+    "static/media/social-network-background.jpg": "/samurai-way/static/media/social-network-background.65ed664325c5a860b96a.jpg",
+    "static/media/social-network-logo.png": "/samurai-way/static/media/social-network-logo.119097b8e247022690aa.png",
+    "static/media/youtube.svg": "/samurai-way/static/media/youtube.e3a989d5a67551ea886c90b8b6294bba.svg",
+    "static/media/job-search.svg": "/samurai-way/static/media/job-search.8e1291862c5b4e95ece44ad78bcbf5cc.svg",
+    "static/media/twitter.svg": "/samurai-way/static/media/twitter.e52528fc78ad8ee83e8c14d9d821d67d.svg",
+    "static/media/vk.svg": "/samurai-way/static/media/vk.daab149b5fbce62b58d148263f70a4e9.svg",
+    "static/media/photo-icon.svg": "/samurai-way/static/media/photo-icon.57c0de17a1a3c3ea514211836e5b30d8.svg",
+    "static/media/github.svg": "/samurai-way/static/media/github.18cf6225ef8efdd410ca86afd6a4817c.svg",
+    "static/media/instagram.svg": "/samurai-way/static/media/instagram.5057f2b1fdb8cb222353bc9cfeda53fa.svg",
+    "static/media/mainLink.svg": "/samurai-way/static/media/mainLink.dccb93916e240fb2173e6fae6eee9248.svg",
+    "static/media/website.svg": "/samurai-way/static/media/website.ae56f1c35ef7afb69d83ea4907f7c5ed.svg",
+    "index.html": "/samurai-way/index.html",
+    "static/media/facebook.svg": "/samurai-way/static/media/facebook.690047cf80ea7057ab7e676e6867f5c2.svg",
+    "static/media/user.svg": "/samurai-way/static/media/user.8e1014c270ac875059c7607550b924df.svg",
+    "main.18214cf9.css.map": "/samurai-way/static/css/main.18214cf9.css.map",
+    "main.35df16c7.js.map": "/samurai-way/static/js/main.35df16c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18214cf9.css",
+    "static/js/main.35df16c7.js"
+  ]
+}
