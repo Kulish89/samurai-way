@@ -1,0 +1,14 @@
+.user_page {
+  height: 100%;
+}
+.usersList_wrapper {
+  height: 90%;
+  overflow-y: scroll;
+  text-align: center;
+}
+.usersList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}

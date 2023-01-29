@@ -1,0 +1,31 @@
+.profilePage {
+  height: 100%;
+}
+.profile_wrapper {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+.content_background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+.content_background img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.8;
+}
+.content_description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}

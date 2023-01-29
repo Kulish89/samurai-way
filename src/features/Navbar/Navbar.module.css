@@ -1,0 +1,16 @@
+.nav {
+  grid-area: n;
+  background-color: #11c5a7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.nav_link {
+  color: white;
+  text-decoration: none;
+}
+.active_link {
+  color: #206f57;
+}

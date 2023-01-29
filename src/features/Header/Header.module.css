@@ -1,0 +1,11 @@
+.header {
+  grid-area: h;
+  background-color: rgb(17, 197, 167);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.loginLink {
+  text-decoration: none;
+  color: white;
+}
