@@ -5,7 +5,7 @@ import store from "./app/redux-store";
 import { Provider } from "react-redux";
 import App from "./app/App";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -24,9 +24,9 @@ const theme = createTheme({
 ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="process.env.public_url">
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   </Provider>,
   document.getElementById("root")
