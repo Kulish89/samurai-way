@@ -24,7 +24,7 @@ const theme = createTheme({
 ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="process.env.public_url">
         <App />
       </BrowserRouter>
     </ThemeProvider>
